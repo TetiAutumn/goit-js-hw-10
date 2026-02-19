@@ -1,0 +1,78 @@
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background: #ffffff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2e2f42;
+}
+
+.top-block {
+    margin-bottom: 32px;
+}
+#datetime-picker {
+  width: 260px;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+}
+
+#datetime-picker:disabled {
+  background: #f0f0f0;
+  cursor: not-allowed;
+}
+
+button[data-start] {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #4e75ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button[data-start]:hover:not(:disabled) {
+  background: #3b5ce6;
+}
+
+button[data-start]:disabled {
+  background: #cfcfcf;
+  cursor: not-allowed;
+}
+
+.timer-block {
+  width: 420px;                 /* ширина як у верхнього контейнера */
+  display: flex;
+  justify-content: space-between;
+}
+
+.field {
+  flex: 1;                      /* 4 рівні колонки */
+  display: flex;
+  flex-direction: column;
+  align-items: center;          /* центрує 00 і підпис */
+  justify-content: center;      /* вирівнює вертикально */
+}
+
+.value {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 40px;
+line-height: 120%;
+letter-spacing: 0.04em;
+color: #2e2f42;            /* важливо, щоб не було зайвого відступу */
+}
+
+.label {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: #2e2f42;
+}
