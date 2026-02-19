@@ -73,7 +73,7 @@ startBtn.addEventListener("click", () => {
 // ---------------- UPDATE UI ----------------
 
 function updateTimer({ days, hours, minutes, seconds }) {
-  daysEl.textContent = days; // дні можуть бути 3+ цифри
+  daysEl.textContent = addLeadingZero(days); // дні можуть бути 3+ цифри
   hoursEl.textContent = addLeadingZero(hours);
   minutesEl.textContent = addLeadingZero(minutes);
   secondsEl.textContent = addLeadingZero(seconds);
